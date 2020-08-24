@@ -1,0 +1,34 @@
+---
+webapp:
+  TestWHP1:
+    webapp_name: TestWHP1
+    kind: Windows
+    asp: asp-demopondichys-poc
+    asprg: rg-demopondichys-poc
+    connectionstring:
+      name: Database
+      type: SQLServer
+      value: Server=some-server.mydomain.com;Integrated Security=SSPI
+    app_settings:
+      testAppSetting1: Abcd.12345
+      testAppSetting2: Cloud
+      testAppSetting3: Dev
+  TestWHP2:
+    webapp_name: TestWHP2
+    kind: Windows
+    asp: asp-demopondichys-poc
+    asprg: rg-demopondichys-poc
+    connectionstring:
+      name: Database
+      type: SQLServer
+      value: Server=some-server.mydomain.com;Integrated Security=SSPI
+  TestWHP3:
+    webapp_name: TestWHP3
+    kind: Linux
+    technology: PYTHON|3.7
+    asp: asp-demopondichys-poc
+    asprg: rg-demopondichys-poc
+    app_settings:
+      testAppSetting4: Efgh.6789
+      testAppSetting5: Cloud
+      testAppSetting6: Prod
